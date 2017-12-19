@@ -14,6 +14,7 @@
 		8B51F41D1FE957AF00EEF781 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B51F41C1FE957AF00EEF781 /* Assets.xcassets */; };
 		8B51F4201FE957AF00EEF781 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B51F41E1FE957AF00EEF781 /* LaunchScreen.storyboard */; };
 		8B51F4281FE95C2400EEF781 /* EpisodeListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B51F4271FE95C2400EEF781 /* EpisodeListItem.swift */; };
+		8B871F891FE9A7CC0064208E /* EpisodeListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B871F881FE9A7CC0064208E /* EpisodeListTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		8B51F41F1FE957AF00EEF781 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8B51F4211FE957AF00EEF781 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8B51F4271FE95C2400EEF781 /* EpisodeListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeListItem.swift; sourceTree = "<group>"; };
+		8B871F881FE9A7CC0064208E /* EpisodeListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeListTableViewCell.swift; sourceTree = "<group>"; };
 		BB48CAD1CF0048A469645647 /* Pods-UberCodingChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UberCodingChallenge.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UberCodingChallenge/Pods-UberCodingChallenge.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -81,14 +83,41 @@
 			isa = PBXGroup;
 			children = (
 				8B51F4151FE957AF00EEF781 /* AppDelegate.swift */,
-				8B51F4171FE957AF00EEF781 /* EpisodeListViewController.swift */,
+				8B871F8A1FE9B47A0064208E /* Model */,
+				8B871F8D1FE9B4B20064208E /* View */,
+				8B871F8C1FE9B4930064208E /* Controller */,
 				8B51F4191FE957AF00EEF781 /* Main.storyboard */,
-				8B51F4271FE95C2400EEF781 /* EpisodeListItem.swift */,
 				8B51F41C1FE957AF00EEF781 /* Assets.xcassets */,
 				8B51F41E1FE957AF00EEF781 /* LaunchScreen.storyboard */,
 				8B51F4211FE957AF00EEF781 /* Info.plist */,
 			);
 			path = UberCodingChallenge;
+			sourceTree = "<group>";
+		};
+		8B871F8A1FE9B47A0064208E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8B51F4271FE95C2400EEF781 /* EpisodeListItem.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8B871F8C1FE9B4930064208E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8B51F4171FE957AF00EEF781 /* EpisodeListViewController.swift */,
+			);
+			name = Controller;
+			path = View;
+			sourceTree = "<group>";
+		};
+		8B871F8D1FE9B4B20064208E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8B871F881FE9A7CC0064208E /* EpisodeListTableViewCell.swift */,
+			);
+			name = View;
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -225,6 +254,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8B51F4181FE957AF00EEF781 /* EpisodeListViewController.swift in Sources */,
+				8B871F891FE9A7CC0064208E /* EpisodeListTableViewCell.swift in Sources */,
 				8B51F4161FE957AF00EEF781 /* AppDelegate.swift in Sources */,
 				8B51F4281FE95C2400EEF781 /* EpisodeListItem.swift in Sources */,
 			);
