@@ -2,4 +2,4 @@
 
 The coding challenge is completed by Oguzhan Cakmak.
 
-![Alt text](images/project.png| width=100)
+![Alt text](images/project.png=250x250)
