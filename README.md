@@ -2,4 +2,4 @@
 
 The coding challenge is completed by Oguzhan Cakmak.
 
-![](images/project.jpg?raw=true "Screen Shot")
+![](img/project.jpg?raw=true "Screen Shot")
