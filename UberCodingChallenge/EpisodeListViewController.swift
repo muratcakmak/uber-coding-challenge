@@ -42,14 +42,19 @@ extension EpisodeListViewController {
   override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     let cell = tableView.dequeueReusableCell(withIdentifier: "EpisodeItem", for: indexPath)
     let item = items[indexPath.row]
+    
     let thumbnail = cell.viewWithTag(100) as! UIImageView
-    thumbnail.sd_setImage(with: URL(string: "\(item.medium)"), placeholderImage: UIImage(named: "placeholder.png"))
+    thumbnail.sd_setImage(with: item.imageURL, placeholderImage: UIImage(named: "placeholder.png"))
+    
     let name = cell.viewWithTag(101) as! UILabel
     name.text = item.name
+    
     let airdate = cell.viewWithTag(102) as! UILabel
     airdate.text = "Air Date: \(item.airdate)"
+    
     let episode = cell.viewWithTag(103) as! UILabel
     episode.text = "S\(item.season)E\(item.number)"
+    
     return cell
   }
 }
@@ -90,7 +95,8 @@ extension EpisodeListViewController {
             let number = episode["number"].intValue
             let airdate = episode["airdate"].stringValue
             let medium = episode["image"]["medium"].stringValue
-            let item = EpisodeListItem(id: id, name: name, season: season, number: number, airdate: airdate, medium: medium)
+            let imageURL = URL(string: medium)!
+            let item = EpisodeListItem(id: id, name: name, season: season, number: number, airdate: airdate, imageURL: imageURL)
             self.items.append(item)
         }
         tableView.reloadData()

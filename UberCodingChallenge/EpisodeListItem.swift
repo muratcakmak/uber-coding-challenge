@@ -14,5 +14,5 @@ struct EpisodeListItem {
   let season: Int
   let number: Int
   let airdate: String
-  let medium: String
+  let imageURL: URL
 }
