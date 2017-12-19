@@ -9,4 +9,5 @@ target 'UberCodingChallenge' do
   # Pods for UberCodingChallenge
   pod 'Alamofire', '~> 4.5'
   pod 'SwiftyJSON'
+  pod 'SDWebImage', '~> 4.0'
 end
