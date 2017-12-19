@@ -1,0 +1,6 @@
+framework module Pods_UberCodingChallenge {
+  umbrella header "Pods-UberCodingChallenge-umbrella.h"
+
+  export *
+  module * { export * }
+}

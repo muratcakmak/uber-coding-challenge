@@ -8,9 +8,11 @@
 
 import Foundation
 
-class EpisodeListItem {
-  var title = ""
-  var date = ""
-  var episodeNumber = ""
-  var thumbnail = ""
+struct EpisodeListItem {
+  let id: Int
+  let name: String 
+  let season: Int
+  let number: Int
+  let airdate: String
+  let medium: String
 }
