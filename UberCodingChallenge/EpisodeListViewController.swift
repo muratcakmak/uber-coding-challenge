@@ -10,6 +10,13 @@ import UIKit
 
 class EpisodeListViewController: UITableViewController {
 
+  var items: [EpisodeListItem]
+
+  required init?(coder aDecoder: NSCoder) {
+    items = [EpisodeListItem]()
+    super.init(coder: aDecoder)
+  }
+
   override func viewDidLoad() {
     super.viewDidLoad()
     // Do any additional setup after loading the view, typically from a nib.
