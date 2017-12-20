@@ -82,10 +82,10 @@
 		8B51F4141FE957AF00EEF781 /* UberCodingChallenge */ = {
 			isa = PBXGroup;
 			children = (
+				8BA318971FEAF0D2008948A4 /* View */,
+				8BA318961FEAF094008948A4 /* Controller */,
+				8BA318941FEAF04F008948A4 /* Model */,
 				8B51F4151FE957AF00EEF781 /* AppDelegate.swift */,
-				8B871F8A1FE9B47A0064208E /* Model */,
-				8B871F8D1FE9B4B20064208E /* View */,
-				8B871F8C1FE9B4930064208E /* Controller */,
 				8B51F4191FE957AF00EEF781 /* Main.storyboard */,
 				8B51F41C1FE957AF00EEF781 /* Assets.xcassets */,
 				8B51F41E1FE957AF00EEF781 /* LaunchScreen.storyboard */,
@@ -94,7 +94,7 @@
 			path = UberCodingChallenge;
 			sourceTree = "<group>";
 		};
-		8B871F8A1FE9B47A0064208E /* Model */ = {
+		8BA318941FEAF04F008948A4 /* Model */ = {
 			isa = PBXGroup;
 			children = (
 				8B51F4271FE95C2400EEF781 /* EpisodeListItem.swift */,
@@ -102,22 +102,20 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		8B871F8C1FE9B4930064208E /* Controller */ = {
+		8BA318961FEAF094008948A4 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
 				8B51F4171FE957AF00EEF781 /* EpisodeListViewController.swift */,
 			);
-			name = Controller;
-			path = View;
+			path = Controller;
 			sourceTree = "<group>";
 		};
-		8B871F8D1FE9B4B20064208E /* View */ = {
+		8BA318971FEAF0D2008948A4 /* View */ = {
 			isa = PBXGroup;
 			children = (
 				8B871F881FE9A7CC0064208E /* EpisodeListTableViewCell.swift */,
 			);
-			name = View;
-			path = "New Group";
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
