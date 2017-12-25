@@ -91,6 +91,12 @@
                                         <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Wr6-5K-9iy" secondAttribute="trailing" constant="20" symbolic="YES" id="s74-KU-diR"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="airdate" destination="PbU-jA-1zj" id="mwR-Ne-nT3"/>
+                                    <outlet property="episode" destination="fwh-2A-vzd" id="rIX-mp-X3B"/>
+                                    <outlet property="name" destination="Wr6-5K-9iy" id="xUs-IH-OY6"/>
+                                    <outlet property="thumbnail" destination="VIQ-cK-Ifq" id="YyX-wv-FLs"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>

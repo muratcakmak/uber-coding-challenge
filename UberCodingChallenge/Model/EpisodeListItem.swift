@@ -11,8 +11,19 @@ import Foundation
 struct EpisodeListItem {
   let id: Int
   let name: String 
-  let season: Int
-  let number: Int
+  private let season: Int
+  private let number: Int
+  let episode: String
   let airdate: String
   let imageURL: URL
+
+  init(id: Int, name:String, season: Int, number:Int, airdate:String, imageURL: URL) {
+    self.id = id
+    self.name = name
+    self.season = season
+    self.number = number
+    self.airdate = airdate
+    self.imageURL = imageURL
+    self.episode = "S\(self.season)E\(self.number)"
+  }
 }

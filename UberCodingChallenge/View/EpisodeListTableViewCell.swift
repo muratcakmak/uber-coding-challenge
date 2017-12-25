@@ -10,7 +10,12 @@ import UIKit
 
 class EpisodeListTableViewCell: UITableViewCell {
 
-    override func awakeFromNib() {
+  @IBOutlet weak var thumbnail: UIImageView!
+  @IBOutlet weak var name: UILabel!
+  @IBOutlet weak var airdate: UILabel!
+  @IBOutlet weak var episode: UILabel!
+  
+  override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
     }
